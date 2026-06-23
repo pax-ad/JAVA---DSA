@@ -11,6 +11,6 @@ public class Inout {
         int [] marks = new int[5];
         marks[0] = sc.nextInt();
         System.out.println("Your physics marks : " + marks[0]);
-        
+        sc.close();
     }
 }
