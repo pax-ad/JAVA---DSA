@@ -15,7 +15,8 @@ public class Palindrome {
     public static boolean isPalindrome(String str){
         for(int i = 0 ; i < str.length(); i++){
             int n = str.length();
-            if( str.charAt(i) != str.charAt(n-1-i) ){
+            if( str.charAt(i) != str.charAt(n-1-i) ) //first index comparison with last index
+                {
                 return false;
             }
         }
