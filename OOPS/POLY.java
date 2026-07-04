@@ -28,7 +28,7 @@ public class POLY {
         D1.eat();
         /*Animal a2 = new Deer();
           a2.eat(); 
-          try to write like this
+          try to write like this*/
        
     }
 }
