@@ -21,5 +21,9 @@ public class Intro {
         public static void main(String[] args) {
             printNum(5);
         }
+
+        // we need a base case to stop the recursion, otherwise it will go into infinite loop and will give stack overflow error.
+        //call stack is a stack data structure which is used to store the information about the active subroutines of a computer program.
+        
     
 }
