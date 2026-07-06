@@ -8,7 +8,17 @@ public class Q1 {
         reverse(num);
     }
 
-    public static void reverse(int[] num)
+    public static void reverse(int[] num){
+        int start = 0;
+        int last = num.length-1;
+        while(start<last){
+            int temp = num[last];
+            num[last] = num[start];
+            num[start] =temp;
+            start++;
+            last--;
+        }
+    }
     
     }
-}
+
