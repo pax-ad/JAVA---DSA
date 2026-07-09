@@ -11,29 +11,36 @@ public class Q6 {
     }
 
     public static void maxSub(int num[]){
-        int currSum = 0;
-        int maxSum = Integer.MIN_VALUE;
-        int prefix[] = new int [num.length];
-
-        prefix[0] = num [0];
+        int cs = 0 ;
+        int ms = Integer.MIN_VALUE;
+        int prefix []= new int[num.length];
+        prefix[0] = num[0];
 
         //calulating the prefix array
-
-        for(int i =1; i < prefix.length ; i ++) // Start loop from 1 to avoid prefix[-1] index crash,java mein 0 se index start hote hai
-            {
-            prefix [i] = prefix[i-1] + num[i];
+        for(int i = 1; i < num.length ; i++){
+            prefix[i] = prefix[i-1]+ num[i];
         }
 
-        for (int i = 0 ; i < num.length;i++){
-            int start =i;
-            for(int j =i ; j <num.length;j++){
-                int end = j;
-                currSum = start == 0? prefix[end]: prefix[end] - prefix[start-1];
-                if(maxSum < currSum){
-                    maxSum = currSum;
-                }
+        for(int i =0 ; i < num.length ; i++){
+            int start = i;
+            for(int j = i ; j < num.length ; j++){
+                int end =j ;
+
+                //most cruical line 
+               // cs = start == 0 ? prefix[end]:prefix[end] - prefix[start-1];
+               if(start ==0){
+                cs=prefix[end]; //when we are starting the cs is same as the element.
+               }
+               else{
+                cs = prefix[end] - prefix[start-1];
+               }
             }
+
+            if(cs>ms){
+                ms=cs; //for chanigng our max 
+            }
+
         }
-        System.out.println("max sum " + maxSum);
+        System.out.println("Max sum is : " + ms);
     }
 }

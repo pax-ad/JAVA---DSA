@@ -9,21 +9,21 @@ public class Q5 {
     Subarray(num);
     }
 
-    public static  void Subarray(int num[]){
-        for (int i = 0; i < num.length; i++) // iterate for the first elemnt
-         {int start = i;
-            for(int j = i; j < num.length; j++) //making pairs
-            { int end = j;
-                for(int k = i; k <= end; k++)
-                    {
-                    System.out.print(num[k]+" ") ;// combining the all pairs;
+    public static void Subarray(int[] num){
+        for(int i = 0 ; i <num.length ; i++){
+            int start = i ;
+            for(int j = i; j < num.length ; j++){
+                int end = j;
+                for(int k = start; k <=end ; k++){
+                    System.out.println(num[k]+ " ");
                 }
-                System.out.println();
-            }
+                System.out.println(); // space between pairs
+             }
+             System.out.println(); //
         }
-        System.out.println("Sub array printed");
+    }
     }
         
-}
+
     
 
