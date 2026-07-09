@@ -1,3 +1,4 @@
+package Practice;
 public class Q4 {
     //two sum array 
 

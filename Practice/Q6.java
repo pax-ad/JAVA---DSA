@@ -1,3 +1,5 @@
+package Practice;
+
 public class Q6 {
     
     //printing max subarray sum
