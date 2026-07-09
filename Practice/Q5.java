@@ -10,10 +10,10 @@ public class Q5 {
 
     public static  void Subarray(int num[]){
         for (int i = 0; i < num.length; i++) // iterate for the first elemnt
-         {
-            for(int j = 1; j < num.length; j++) //making pairs
-            {
-                for(int k = i; k <= j; k++)
+         {int start = i;
+            for(int j = i; j < num.length; j++) //making pairs
+            { int end = j;
+                for(int k = i; k <= end; k++)
                     {
                     System.out.print(num[k]+" ") ;// combining the all pairs;
                 }
