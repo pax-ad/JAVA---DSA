@@ -23,20 +23,23 @@ public class Power {
     }
     
     // using recursion
-    public static int Optimized_Power(int a , int n ){
-        if(n==0){
-            return 1;
-        }
-        int halfPower = opitpow(a,n/2); //changes time complexity to O(logn)
-        int halfpowersqn = optipow(a,n/2)*optipow(a,n/2);
-
-
-        // n is odd 
-        if (n%2!=0){
-            halfpowersqn = a * halfpowersqn;
-        }
-        return halfpowersq;
+   public static int Optimized_Power(int a, int n) {
+    if (n == 0) {
+        return 1;
     }
 
+    // Calculate half power only once
+    int halfPower = Optimized_Power(a, n / 2);
+
+    // Square it
+    int halfPowerSq = halfPower * halfPower;
+
+    // If exponent is odd
+    if (n % 2 != 0) {
+        halfPowerSq = a * halfPowerSq;
+    }
+
+    return halfPowerSq;
+}
 
 }
