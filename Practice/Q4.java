@@ -6,7 +6,7 @@ public class Q4 {
 
     public static void main(String[] args) {
         int num[]={2,7,11,15};
-        int key ;
+      
         Sum(num,9);
     
     }
