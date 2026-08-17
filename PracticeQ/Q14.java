@@ -9,7 +9,7 @@ public class Q14 {
     }
 
     public static void Bubblesort(int num[]){
-        for(int i = 0 ; i < num.length();i++){
+        for(int i = 0 ; i < num.length;i++){
             
         }
     }
