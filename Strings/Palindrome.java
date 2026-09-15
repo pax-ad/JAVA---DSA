@@ -13,7 +13,7 @@ public class Palindrome {
     }
 
     public static boolean isPalindrome(String str){
-        for(int i = 0 ; i < str.length(); i++){
+        for(int i = 0 ; i < str.length(); i++){ // for cutting the operations in half str.length/2.
             int n = str.length();
             if( str.charAt(i) != str.charAt(n-1-i) ) //first index comparison with last index
                 {
