@@ -19,6 +19,17 @@ class Animal{
         sc = " abc";
         return sc;
     }
+
+    //use getter ans setter method 
+    /*// Setter method
+    void setSkinColor(String sc) {
+        this.skinColor = sc;
+    }
+
+    // Getter method
+    String getSkinColor() {
+        return this.skinColor;
+    } */
 }
 
 class Fish extends Animal{
