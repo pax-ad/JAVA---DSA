@@ -1,7 +1,5 @@
 package DivandConq;
 
-import java.util.Arrays;
-
 public class intro {
        // search in Rotated sorted array
        /*input : sorted related array with distinct number (in aascendign orders).IT is rotated at a pivot point.Find the index of given element.
